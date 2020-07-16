@@ -25,4 +25,3 @@ License
 MIT
 
 **Free Software, Hell Yeah!**
-# gossip_frontend

@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import Navbar from "./components/common/Navbar";
 
 function App() {
+  const [navHeight, setNavHeight] = useState(0);
+
+  useEffect(() => {
+    const initNavHeight = document.getElementById("navbar");
+    setNavHeight(initNavHeight.offsetHeight);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative bg-green-500 h-screen">
+      <Navbar />
+      <div
+        style={{ marginTop: `${navHeight}px` }}
+        className="bg-white container mx-auto"
+      >
+        a
+      </div>
     </div>
   );
 }
