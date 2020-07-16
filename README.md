@@ -2,6 +2,8 @@
 
 Gossip is a new age social media for mennial.
 
+**watch preview [here](https://gossip-media.netlify.app/)**
+
 ### Installation
 
 Dillinger requires [Node.js](https://nodejs.org/) v4+ and [React Js](https://reactjs.org/) to run.
@@ -19,8 +21,7 @@ npm start
 - Write MORE Code
 - Add Night Mode
 
-License
-----
+## License
 
 MIT
 
